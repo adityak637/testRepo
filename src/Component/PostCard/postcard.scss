@@ -1,0 +1,48 @@
+@import "../../assets/sass/config";
+@import "../../assets/sass/methods";
+
+.post-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  .card {
+    border-color: #f6f6f6;
+    border-radius: 2px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.052);
+    @include transition(0.5s ease all);
+    .p-header {
+      @include display(flex);
+      padding: 12px;
+      align-items: center;
+      font-weight: 600;
+      .name {
+        .category {
+          display: flex;
+          font-weight: 400;
+          span {
+            padding-right: 7px;
+            color: $gray;
+            font-size: 0.825rem;
+            line-height: 18px;
+          }
+        }
+      }
+      .p-img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 15px;
+        img {
+          max-width: 100%;
+        }
+      }
+      + .card-text {
+        padding-top: 0;
+      }
+    }
+    .card-text {
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newTripForm{
+    width : 916px;
+    height : 1960px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+}
+
+.form-container{
+    width: 820px;
+    height : 1753px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-header{
+    width: 820px;
+    height : 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tripTitle{
+    width: 820px;
+    height: 52px;
+    
+}
+
+.triptitle-form{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.destination-name{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.short-introduction{
+    width: 820px;
+    height : 156px;
+    margin-top: 24px;
+}
+
+.start-end-details{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.start-end-dates{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.day-1-itinerary{
+    width: 820px;
+    height : 104px;
+    margin-top: 24px;
+}
+
+.day-2-itinerary{
+    width: 820px;
+    height : 104px;
+    margin-top: 24px;
+}
+
+.day-3-itinerary{
+    width: 820px;
+    height : 104px;
+    margin-top: 24px;
+}
+
+.day-nights-booking-closing-time{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.advice-guidelines{
+    width: 820px;
+    height: 104px;
+    margin-top: 24px;
+}
+
+.cost-per-person-batch{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.promo-code-discount-type-amount{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.upload-thumbnail{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+
+.upload-cover-form{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.upload-location-images{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.message-for-users{
+    width: 820px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.previewDetails-button{
+    width : 160px;
+    height : 59px;
+    border-radius: 4px;
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.12);
+    font-size: 12px;
+    margin-top: 99px;
+}
+
+
+//trial for upload
+
+.input-group{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

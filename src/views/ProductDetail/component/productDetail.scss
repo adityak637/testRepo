@@ -1,0 +1,234 @@
+.section1{
+    width: 1170px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+hr{
+    width: 30%;
+}
+
+.img1{
+    border-radius: 25px;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.15));
+}
+
+.bottom-imgs{
+    border-radius: 15px;
+}
+
+.product-3imgs{
+    margin-top: 15px;
+}
+
+.product-name{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 0;
+    color: #313131;
+}
+
+.product-code{
+    color: #AEAEAE;
+}
+.product-info p{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #AEAEAE;
+}
+
+.location{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #AEAEAE;
+}
+
+.start-end{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #888888;
+    margin-bottom: 0;
+}
+
+.number-of-travellers{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #AEAEAE;
+}
+
+.explore-btn{
+    width: 420px;
+    height: 58px;
+    background: #3075C6;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.section2{
+    width: 1170px;
+    height: 233px;
+    margin: 0 auto;
+}
+
+.itinerary{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #313131;
+}
+
+.date{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10.6683px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #AAAAAA;
+}
+
+.day{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 35px;
+    /* identical to box height, or 158% */
+
+    letter-spacing: 1px;
+
+    color: #444444;
+}
+
+.day-info{
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 1px;
+color: #888888;
+}
+
+// .itinerary-days{
+//     border-left: 1px solid #E6E6E6;
+//     border-bottom: 1px solid #E6E6E6;
+// }
+
+/*Add left vertical line */
+.trial:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 10px;
+    height: 50px;
+    background: #c24141;
+}
+
+/*Add horizontal line at bottom*/
+.trial:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #c42626;
+}
+
+.section3{
+    width: 1170px;
+    height:260px;
+    margin:  auto;
+    background: rgba(250, 250, 250, 1); 
+    border-radius: 32px;
+}
+
+.guide-info1{
+    width: 205px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guide-info1 row{
+    margin:auto;
+}
+
+.guide-info1 img{
+    border-radius : 30px;
+}
+
+.number-trips{
+    font-size: 10px;
+}
+
+.name-of-guide{
+    font-size: 22px;
+}
+
+.guide-img{
+    width: 122px;
+    height: 89px;
+}
+
+.section4{
+    width: 1170px;
+    height: 230px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.advices , .guidelines{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #313131;
+}
+
+.advices-info , .guidelines-info{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #AEAEAE;
+
+}
+
+.section5{
+    width: 1170px;
+    height: 363px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+

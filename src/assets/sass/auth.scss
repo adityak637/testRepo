@@ -1,0 +1,240 @@
+@import "config";
+@import "methods";
+
+.auth-container {
+  @include display(flex);
+  justify-content: center;
+  background: rgb(255, 239, 238);
+  min-height: calc(100vh - 121px);
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  .auth-box {
+    padding: 0;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    margin: 40px 0;
+    @include display(flex);
+    overflow: hidden;
+    position: relative;
+    > div {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .img-box {
+      background: url("../img/login-bg.png") center no-repeat;
+      position: relative;
+      .logo {
+        position: absolute;
+        width: 150px;
+        height: 170px;
+        border-radius: 20px;
+        background: #fff url("../img/f-logo.png") center no-repeat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .inner-box {
+      padding: 40px 100px;
+      width: 100%;
+    }
+
+    aside {
+      width: 100%;
+      position: relative;
+
+      .forgot-link {
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 0.925rem;
+
+        a {
+          color: $primary;
+          text-decoration: underline;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1.625rem;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+        label {
+          font-size: 14px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .form-control {
+          height: 32px;
+          line-height: 32px;
+        }
+      }
+      .btn {
+        text-decoration: none;
+        color: $black;
+        border-radius: 30px;
+        padding: 12px 45px;
+        font-size: 14px;
+        color: #fff;
+      }
+      a {
+        color: #545454;
+        font-size: 14px;
+      }
+
+      .auth-text {
+        margin-bottom: 18px;
+        display: block;
+        .navbar {
+          justify-content: center;
+          li {
+            a {
+              text-decoration: none;
+              color: $black;
+              border-radius: 30px;
+              padding: 12px 45px;
+              font-size: 14px;
+              &.btn {
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .title {
+          margin-top: 30px;
+          h3 {
+            font-size: 32px;
+            margin: 0;
+            line-height: 28px;
+            color: #000;
+          }
+          span {
+            font-size: 14px;
+            color: #aeaeae;
+            font-weight: 600;
+          }
+        }
+
+        h4 {
+          color: $primary;
+          font-size: 2rem;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+
+        p {
+          color: $lightgrey;
+          font-size: 1rem;
+        }
+      }
+
+      .error-space {
+        position: relative;
+        min-height: 35px;
+
+        .error-message {
+          color: $error;
+        }
+
+        &.min-space {
+          min-height: 26px;
+        }
+      }
+
+      .bottom-btn {
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+
+        .btn {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.auth-success {
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.social-login {
+  text-align: center;
+
+  label {
+    display: block;
+  }
+
+  .types {
+    margin-top: 25px;
+    a {
+      padding: 0;
+      color: $base;
+      font-size: 1.325rem;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      background: #f2f2f2;
+      border-radius: 45px;
+      text-decoration: none !important;
+      i {
+        padding-right: 10px;
+        background: url("../img/icons/google.svg") center no-repeat;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .devider {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+
+    span {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: $white;
+      color: $base;
+      text-align: center;
+      line-height: 35px;
+      left: 50%;
+      margin: 0 0 0 -18px;
+      top: -18px;
+      font-weight: 600;
+    }
+  }
+}

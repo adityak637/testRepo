@@ -1,0 +1,38 @@
+@import "../../assets/sass/config";
+@import "../../assets/sass/methods";
+
+.select-wrapper {
+  min-width: 220px;
+  width: 100%;
+  .custom_ui__control {
+    font-size: 1rem;
+    border-radius: 0;
+
+    &.custom_ui__control--is-focused {
+      box-shadow: none;
+      border-color: $input-border-focus;
+    }
+
+    .custom_ui__value-container {
+      padding: 7px 10px;
+    }
+  }
+
+  .custom_ui__menu {
+    .custom_ui__menu-list {
+      .custom_ui__option {
+        font-size: 0.975rem;
+
+        &.custom_ui__option--is-focused {
+          background: transparent;
+        }
+
+        &.custom_ui__option--is-selected,
+        &:hover {
+          background-color: $input-border-focus;
+          color: $base;
+        }
+      }
+    }
+  }
+}

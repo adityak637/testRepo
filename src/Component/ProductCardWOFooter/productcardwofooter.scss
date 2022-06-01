@@ -1,0 +1,101 @@
+@import "../../assets/sass/config";
+@import "../../assets/sass/methods";
+
+.product-card-wrapper {
+  @include display(flex);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  // flex: 0 0 calc(50% - 10px);
+  // max-width: calc(50% - 10px);
+  margin-bottom: 20px;
+  margin: 0 10px;
+
+  .card {
+    border-radius: 24px;
+    box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    overflow: hidden;
+    @include transition(0.5s ease all);
+    border: 0;
+    cursor: pointer;
+    img {
+      height: 135px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card-footer {
+      padding: 14px;
+      background-color: $primary;
+      border-top: 0;
+      color: $white;
+      &:hover {
+        i {
+          padding-left: 20px;
+          @include transition(0.5s ease all);
+        }
+      }
+    }
+
+    .card-body {
+      padding: 18px;
+      text-align: left;
+
+      .card-title {
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        font-size: 1rem;
+        line-height: normal;
+        margin: 10px 0 0 0;
+      }
+      .card-subtitle {
+        margin: 10px 0;
+      }
+
+      .card-subtitle,
+      .card-text {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+        color: #aeaeae;
+        &.treking {
+          background: url("../../assets/img/icons/trekking.png") top left
+            no-repeat;
+        }
+      }
+
+      .card-price {
+        display: flex;
+        justify-content: space-between;
+        .location {
+          background: url("../../assets/img/icons/location.svg") top 50% left 0
+            no-repeat;
+          font-size: 14px;
+          color: #aeaeae;
+          padding-left: 20px;
+        }
+        .price {
+          color: $success;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .star-ratings {
+        position: absolute !important;
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.152);
+    }
+  }
+}

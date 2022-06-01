@@ -1,0 +1,23 @@
+.profile-wrapper {
+  max-width: 1120px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  aside {
+    max-width: 120px;
+    flex: 0 0 120px;
+  }
+  .profile-content {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.125);
+    padding: 30px;
+    background: #fff;
+    max-width: calc(100% - 160px);
+    flex: 0 0 calc(100% - 160px);
+    border-radius: 10px;
+    h4 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+  }
+}

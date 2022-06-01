@@ -1,0 +1,43 @@
+@import "../../assets/sass/config";
+@import "../../assets/sass/methods";
+
+.as-wrapper {
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .as-container {
+    background: #f8f8f8;
+    height: 80vh;
+    overflow: auto;
+    width: 70%;
+    @include box-shadow(0 0 10px rgba(0, 0, 0, 0.12));
+    h4 {
+      font-size: 1.025rem;
+      font-weight: 600;
+    }
+
+    .as-header {
+      @include display(flex);
+      justify-content: space-between;
+      padding: 1rem;
+      background: $white;
+    }
+    .as-section {
+      padding: 1rem 1rem 0 1rem;
+      background: $white;
+      margin-top: 0.525rem;
+    }
+  }
+
+  &.true {
+    display: flex;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../../assets/sass/config";
+@import "../../../assets/sass/methods";
+
+.company-card {
+  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+
+  .banner {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .campany-info {
+    margin-top: -50px;
+    padding: 0 40px;
+  }
+
+  .c-info-data {
+    @include display(flex);
+    align-items: flex-end;
+    margin-bottom: 20px;
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 10px 0 0;
+      border: 1px solid #eee;
+      background: $white;
+      padding: 5px;
+      border-radius: 5px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+    .c-text {
+      h4 {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+      div {
+        span {
+          color: $gray;
+          font-size: 0.925rem;
+          + span {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

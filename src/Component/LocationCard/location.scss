@@ -1,0 +1,56 @@
+@import "../../assets/sass/config";
+@import "../../assets/sass/methods";
+
+.location-card-wrapper {
+  @include display(flex);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.location-card {
+  // flex: 0 0 calc(50% - 10px);
+  // max-width: calc(50% - 10px);
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 125px;
+  height: 160px;
+
+  .card {
+    @include transition(0.5s ease all);
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0;
+    background: transparent;
+
+    img {
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+      padding: 0.5rem;
+      text-align: left;
+      display: flex;
+
+      .card-subtitle {
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+
+    &:hover {
+      i {
+        color: $primary;
+      }
+    }
+  }
+}
